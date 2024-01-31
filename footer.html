@@ -1,0 +1,148 @@
+<div id="Footer">
+    <p class="copyright-text">Copyright © 2024 Borcelle LLC. All Rights Reseved</p>
+    <p class="find-us-text">Find Us:</p>
+    <img class="social-media-imgs accounts"
+        src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png" alt="">
+    <img class="social-media-imgs accounts"
+        src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg" alt="">
+    <img class="social-media-imgs accounts"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+        alt="">
+    <img class="social-media-imgs accounts"
+        src="https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" alt="">
+    <br>
+    <p class="footer-links">
+        <button id="privacy-notice" class="footer-navigators" onclick="PrivacyDisplay()">Privacy Notice</button> |
+        <button id="terms-of-use" class="footer-navigators" onclick="TermsOfUseDisplay()">Terms of Use</button> |
+        <button id="personal-information" class="footer-navigators" onclick="PersonalInfoDisplay()">Personal
+            Information</button> |
+        <button class="footer-navigators" onclick="CookiesPreferenceDisplay()">Cookie Preferences</button>
+    <p class="footer-info" id="privacy-notice-text">
+        <b>Last Updated: January 25, 2024.</b>
+
+        At Borcelle, we value your privacy and strive to be transparent about how we collect, use, and protect your
+        personal information. This Privacy Notice explains our practices and your choices regarding the information we
+        collect when you use our website or services.
+        <b>1. Information We Collect</b>
+        We may collect the following types of information:
+        Personal Information: This includes your name, email address, and other information you provide when interacting
+        with our services.
+        Usage Information: We collect data on how you use our website and services to improve user experience.
+        <b>2. How We Use Your Information</b>
+        We use your information for the following purposes:
+        Providing Services: To deliver the services you've requested and communicate with you about them.
+        Improving Services: To understand how our services are used and make enhancements.
+        Marketing: To inform you about new features, promotions, and updates if you've opted in to receive such
+        communications.
+        <b>3. Sharing Your Information</b>
+        We do not sell your personal information to third parties. However, we may share information with trusted
+        partners for specific purposes, such as providing customer support or analyzing usage patterns.
+        <b>4. Your Choices</b>
+        Opt-Out: You can opt-out of receiving marketing communications from us at any time.
+        Access and Correction: You have the right to access and correct your personal information.
+        <b>5. Security</b>
+        We take security seriously and implement measures to protect your information from unauthorized access or
+        disclosure.
+        <b>6. Cookies</b>
+        We use cookies to enhance your browsing experience. You can manage your cookie preferences through your browser
+        settings.
+        <b>7. Changes to this Notice</b>
+        We may update this Privacy Notice from time to time. The latest version will be posted on our website.
+    </p>
+    <p class="footer-info" id="terms-of-use-text">
+        <b>NO LIABILITY SUBJECT TO APPLICABLE LAW, INCLUDING WITH RESPECT TO LIABILITY FOR PERSONAL INJURY OR
+            NON-WAIVABLE STATUTORY RIGHTS UNDER NEW JERSEY LAW, IN NO EVENT SHALL BORCELLE OR ITS OFFICERS, DIRECTORS,
+            EMPLOYEES, SHAREHOLDERS OR AGENTS (A) BE LIABLE TO THE USER WITH RESPECT TO USE OF THE SITES, THE CONTENT OR
+            THE MATERIALS CONTAINED IN OR ACCESSED THROUGH THE SITES (INCLUDING WITHOUT LIMITATION ANY DAMAGES CAUSED BY
+            OR RESULTING FROM RELIANCE BY A USER ON ANY INFORMATION OBTAINED FROM BORCELLE), OR ANY DAMAGES THAT RESULT
+            FROM MISTAKES, OMISSIONS, INTERRUPTIONS, DELETION OF FILES OR EMAIL, ERRORS, DEFECTS, VIRUSES, DELAYS IN
+            OPERATION OR TRANSMISSION OR ANY FAILURE OF PERFORMANCE, WHETHER OR NOT RESULTING FROM ACTS OF GOD,
+            COMMUNICATIONS FAILURE, THEFT, DESTRUCTION OR UNAUTHORIZED ACCESS TO BORCELLES' RECORDS, PROGRAMS OR
+            SERVICES; AND (B) BE LIABLE TO THE USER FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR
+            EXEMPLARY DAMAGES, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, LOST PROFITS, LOSS, THEFT OR
+            CORRUPTION OF USER INFORMATION, OR THE INABILITY TO USE THE SITES OR ANY OF THEIR FEATURES. THE USER'S SOLE
+            REMEDY IS TO CEASE USE OF THE SITES.</b>
+    </p>
+
+    <div class="footer-info" id="dont-share-personal-information">
+        <p>
+            DON'T SHARE MY INFO
+        </p>
+    </div>
+    <div class="footer-info" id="share-personal-information">
+        <p>
+            SHARE MY PERSONAL INFO
+        </p>
+    </div>
+    <select title="cookies-selector" id="cookie-preferance" size="3">
+        <option value="required-cookies">Required Cookie</option>
+        <option value="helpful-cookies">Helpful Cookie</option>
+        <option value="advertising-cookies">Advertising Cookies</option>
+    </select>
+</div>
+
+<!-- Javascript for the footer wasn't working outside of the HTML -->
+<script>
+    let personalStatus = 1
+    const privacyNotice = document.getElementById("privacy-notice");
+    const termsOfUse = document.getElementById("terms-of-use");
+    const privacyNoticeText = document.getElementById("privacy-notice-text");
+    const termsOfUseText = document.getElementById("terms-of-use-text");
+    const dontSharePersonalInfo = document.getElementById("dont-share-personal-information");
+    const sharePersonalInfo = document.getElementById("share-personal-information")
+    const cookiePreferences = document.getElementById("cookie-preferance");
+
+    privacyNoticeText.style.display = "none";
+    termsOfUseText.style.display = "none";
+    dontSharePersonalInfo.style.display = "none";
+    sharePersonalInfo.style.display = "none";
+    cookiePreferences.style.display = "none";
+
+    function PrivacyDisplay() {
+        privacyNoticeText.style.display = "block";
+        termsOfUseText.style.display = "none";
+        dontSharePersonalInfo.style.display = "none";
+        sharePersonalInfo.style.display = "none";
+        cookiePreferences.style.display = "none";
+    }
+    function TermsOfUseDisplay() {
+        termsOfUseText.style.display = "block";
+        privacyNoticeText.style.display = "none";
+        dontSharePersonalInfo.style.display = "none";
+        cookiePreferences.style.display = "none";
+        sharePersonalInfo.style.display = "none";
+
+    }
+    function PersonalInfoDisplay() {
+        if (personalStatus == 1) {
+            dontSharePersonalInfo.style.display = "block";
+            sharePersonalInfo.style.display = "none";
+            termsOfUseText.style.display = "none";
+            privacyNoticeText.style.display = "none";
+            cookiePreferences.style.display = "none";
+            personalStatus = 0;
+            document.getElementById('personal-information').style.backgroundColor = 'red';
+            document.getElementById('personal-information').style.color = 'black';
+            dontSharePersonalInfo.style.fontSize = "5rem"
+        }
+        else {
+            personalStatus = 1
+            sharePersonalInfo.style.display = "block";
+            termsOfUseText.style.display = "none";
+            privacyNoticeText.style.display = "none";
+            cookiePreferences.style.display = "none";
+            dontSharePersonalInfo.style.display = "none";
+            document.getElementById('personal-information').style.backgroundColor = "blue";
+            document.getElementById('personal-information').style.color = 'white';
+            sharePersonalInfo.style.fontSize = "5rem";
+        }
+    }
+
+    function CookiesPreferenceDisplay() {
+        termsOfUseText.style.display = "none";
+        privacyNoticeText.style.display = "none";
+        dontSharePersonalInfo.style.display = "none";
+        sharePersonalInfo.style.display = "none";
+        cookiePreferences.style.display = "block";
+    }
+</script>
