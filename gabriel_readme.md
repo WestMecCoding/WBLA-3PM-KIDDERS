@@ -3,10 +3,10 @@
 > Here's some info about my contributions towards the webpage
 
 ## IMPORTANT NOTICE
-I was a main contributor towards fonts, assets, and other small contributions on other people's parts, and work outside of the webpage. I never was assigned a major part of the website as the logo wasn't a huge priority once it was done, leaving me to just help everyone else. In short I only helped in small amounts everywhere compared to everyone else who had a role focused on their part. I will only include contributions that had a significant effect.
+I was a main contributor towards fonts, assets, other small contributions on other people's parts, and work outside of the webpage. I never was assigned a major part of the website as the logo wasn't a huge priority once it was done, leaving me to just help everyone else in their parts within the webpage. In short I only helped in small amounts everywhere compared to everyone else who had a role focused on their part. I will only include contributions that had a significant effect and MY OWN work. 
 
 
-## OVERVIEW
+## OVERVIEW OF WHAT I DID
 
 - I added the logo 
 ```html
@@ -24,7 +24,7 @@ I was a main contributor towards fonts, assets, and other small contributions on
 }
 ```
 
-- Styled small amounts in global CSS and edited any issues from other CSS codes
+- Styled small amounts in global CSS and edited any issues from other CSS codes, adding Exo 2 Font as well.
 ```css
 div#Header h3 {
     margin-top: -20px;
@@ -44,7 +44,7 @@ div#Header h3 {
 }
 ```
 
-- helped with one part of the body section
+- helped with one part of the body section, just to help get the text done quicker
 ```html
         <div id="Home-Area" class="body-part">
           <h3>Market Positioning and Audience</h3>
@@ -60,7 +60,7 @@ div#Header h3 {
         </div>
 ```
 
-- I helped clean any messy code or files by organizing them or editing the code
+- I helped clean any messy code or files by organizing them or editing the code and helped others with anything I could provide with my knowledge
 
 - I wrote the entire presenation slideshow on google slides for the team
     - consisting of 7 slides and revised the entire thing
@@ -68,6 +68,6 @@ div#Header h3 {
 
 
 ## REFLECTION
-So there were issues on the first week which led me to have a moderately low amount of contributions, the logo which was assigned to me would not work for the first week until we found what the issue was. By the time I was done the main wireframes was already complete, leaving me to add in small changes and edits.
-If I were to have more time I would have contributed more into the side nav and anything else I could have added.
+So there were issues on the first week which led me to have a moderately low amount of contributions (for my own work that I did) in my opinion, the logo which was assigned to me would not work for the first week until we found what the issue was. By the time I was done the main wireframes was already complete, leaving me to add in small changes and edits towards other people's work and the slideshow.
+If I were to have more time I would have contributed more into the side nav and anything else I could have added to feel more like I had more contribution towards my team.
 That marks the end of my README, thank you for reading and for your time.
